@@ -6,18 +6,22 @@ import { NovoFuncionarioComponent } from './pages/novo-funcionario/novo-funciona
 import { ListarFuncionarioComponent } from './pages/listar-funcionario/listar-funcionario.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FuncionarioHttpService } from './services/funcionario-http.service';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FuncionarioComponent } from './pages/funcionario/funcionario.component';
 
 
 @NgModule({
   declarations: [
     NovoFuncionarioComponent,
-    ListarFuncionarioComponent
+    ListarFuncionarioComponent,
+    FuncionarioComponent
   ],
   imports: [
     CommonModule,
     FuncionarioRoutingModule,
     MaterialModule,
     HttpClientModule,
+    ReactiveFormsModule,
 
   ],
   providers: [
