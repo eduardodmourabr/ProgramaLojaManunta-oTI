@@ -22,10 +22,12 @@
           </mat-error>
         </mat-form-field>
   
-        <button mat-raised-button color="primary" type="button" class="btn" (click)="selectInput()">Adicionar a foto</button>
+        <button mat-raised-button color="primary" type="button" class="btn" (click)="fileInput.click()">Adicionar a foto</button>
         <input type="file" placeholder="Coloque sua foto.." id="file-input" #fileInput formControlName="foto" accent="image/*" (change)="fileChange($event)" >
         <button mat-raised-button color="accent" type="submit" style="margin-top:10px;">Cadastrar</button>
   
       </form>
     </mat-card>
   </div>
+
+  

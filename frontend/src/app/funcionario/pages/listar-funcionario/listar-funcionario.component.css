@@ -1,3 +1,14 @@
 .fun-table{
     width: 90%;
 }
+
+td:hover {
+    background: gray;
+}
+
+.add{
+    position: fixed;
+    right:50px;
+    bottom:50px;
+}
+

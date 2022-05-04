@@ -1,1 +1,19 @@
-<p>funcionario works!</p>
+<div class="flex-container" *ngIf="funcionario != undefined">
+    <button mat-mini-fab color ="primary" routerLink="/funcionario">
+        <mat-icon>arrow_left</mat-icon>
+      </button>
+    <div class="leiaut">
+        <mat-card >
+            <img [src]="funcionario.foto == null ? '/assets/no_profile.webp' : funcionario.foto" [alt]="'Foto de  '+ funcionario.nome" mat-card-image class="funImg">
+            <mat-card-content>
+                <mat-card-title>
+                    {{funcionario.nome}}
+                </mat-card-title>
+                <mat-card-subtitle>
+                    {{funcionario.email}}
+                </mat-card-subtitle>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+

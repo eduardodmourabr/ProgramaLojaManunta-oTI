@@ -1,0 +1,26 @@
+
+
+.funImg{
+    max-width:400px;
+    
+}
+
+#main-form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+#file-input{
+   display: none;
+}
+
+.btn{
+    width: 150px;
+}
+
+.flex-container > button{
+    position: absolute;
+    left: 65px;
+    top: 50px;
+}
